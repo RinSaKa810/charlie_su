@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#eef3f8">
+  <meta name="description" content="Interactive envelope with letter">
+  <title>Interactive Envelope</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <div class="music-controls">
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Turn on background music" title="Toggle background music">
+        <span class="music-icon">♬</span>
+      </button>
+    </div>
+    <div class="music-player" aria-hidden="true">
+    <audio
+        id="music-audio"
+        loop>
+    </audio>
+</div>
+
+    <section class="hero">
+      <div class="envelope-wrapper">
+        <button class="envelope" type="button" aria-expanded="false" aria-label="Open letter">
+          <div class="envelope-body"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-seal">
+            <div class="heart"></div>
+          </div>
+        </button>
+        <p class="hint"><font color = "#000000"><strong>Tra Lý Tô đã gửi cho bạn một bức thư</strong></font>
+        </p>
+        <p><strong><font color = "#000000">Mở ngay</font></strong></p>
+      </div>
+    </section>
+
+    <div class="letter-overlay" aria-hidden="true">
+      <div class="letter-scene" aria-hidden="true">
+        <div class="side-portrait left-portrait" style="background-image:url(picture/1.jpg)"></div>
+        <div class="letter-card" role="dialog" aria-label="Letter content">
+          <div class="letter-content">
+        <p>Nếu có ai đó hỏi tôi, việc biết trước được quá khứ và tương lai là một món quà hay một lời nguyền? Tôi sẽ nói, đó từng là một cỗ quan tài lạnh lẽo giam cầm tôi, cho đến khi em bước vào.
+        </p>
+        <p>Tôi vốn dĩ không phải là một con người trọn vẹn. Tôi chỉ là một chuỗi mã số vô hồn 180724-02 trong dự án Phoenix tàn khốc, được sinh ra từ phòng thí nghiệm để làm công cụ cho thứ gọi là "đỉnh cao khoa học" của cha tôi. Mọi sự trưởng thành, mọi sự phản kháng, hay thậm chí khát vọng của tôi đều nằm trong một kế hoạch được lập trình sẵn. Giống như người anh em song sinh của tôi đã bị xử tử bằng cái chết nhân đạo ở tuổi 13 chỉ vì bộc lộ tài năng hội họa, tôi biết rõ sinh mệnh của mình cũng sẽ kết thúc khi các tế bào ngừng phát triển ở tuổi 28.
+        </p>
+        <p>Tôi từng nghĩ cuộc đời mình chỉ là một phương trình khô khan và đầy tuyệt vọng. Nhưng giữa thế giới mục nát được đo lường bằng những hằng số vật lý vô tri ấy, em là biến số duy nhất, rực rỡ nhất mà tôi không bao giờ muốn giải mã.
+        </p>
+        <p>Từ cô bé đánh rơi chiếc kẹp tóc tại bữa tiệc năm nào, đến vị sĩ quan dũng cảm dám lên tiếng trước toàn trường, em đã dạy tôi biết rung động. Ở khu vườn bí mật của TENET, khi chúng ta cá cược bằng một bản hợp đồng hôn nhân, và sau này khi em rơi nước mắt gật đầu đồng ý làm vợ tôi trong phòng thí nghiệm... tất cả đã trở thành lý do để một kẻ vốn sinh ra làm công cụ như tôi khao khát được sống, được yêu như một con người bình thường. Em là tấm gương của tôi, là cầu nối duy nhất kéo tôi lại với thế giới bình dị này.
+        </p>
+        <p>Nhưng em của tôi ngốc lắm, em luôn lo lắng khi thấy tôi làm việc kiệt sức, em đâu biết rằng thời gian của tôi thực sự không còn nhiều. Để dọn sạch bóng tối do việc khai thác năng lượng của IFF gieo rắc, để mang lại bầu trời xanh thực sự cho nhân loại và cho em, tôi đành phải ép bản thân mình vượt qua mọi giới hạn của cơ thể, rút ngắn kỳ hạn thí nghiệm xuống chỉ còn ba tháng.
+        </p>
+        <p>Khoảnh khắc tôi dứt khoát khóa trái cánh cửa cách ly của lò phản ứng, nhìn em khóc nức nở tuyệt vọng qua màn hình, trái tim tôi thực sự rất đau. Tôi biết mình thật tàn nhẫn khi ép em phải nói lời tạm biệt, nhưng xin em hãy hiểu, tôi không bao giờ muốn trong tương lai mà tôi tạo ra lại thiếu vắng sự tồn tại của em.
+        </p>
+        <p>Khi nhiệt độ và lượng bức xạ khủng khiếp từ lò phản ứng nuốt chửng lấy cơ thể này, tôi không hề sợ hãi. Đứng trước cái chết, tôi đã tự hỏi mình: Nếu ngay từ đầu đã nhìn thấu tương lai đẫm máu này, liệu tôi có muốn thay đổi nó không? 
+        </p>
+        <p>Câu trả lời là Không. Dù cho có biết trước kết quả thảm khốc đến đâu, tôi vẫn muốn cố chấp bước vào thế giới này, để được gặp em và yêu em như một đứa trẻ.
+        </p>
+        <p>Xin lỗi vì đã nợ em một đám cưới thế kỷ, xin đừng khóc, cũng đừng tìm kiếm dấu vết sự ra đi của tôi. Hãy sống thật kiêu hãnh, thật tự do dưới ánh mặt trời mới mà chúng ta đã cùng nhau thắp lên.
+        </p>
+        <p class="letter-love">Hẹn gặp lại em... Anh thực sự rất nhớ em.</p>
+        <p class="letter-name">Tra Lý Tô.</p>
+        <p class="letter-reply"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeCk95hm0DQ5qoUD2LpK1AmxlUHVQSNw_Ty_Z_EBRK56GRcJA/viewform?usp=publish-editor" target="_blank" rel="noopener noreferrer"><strong><em>Bạn có muốn gửi thư lại thư cho Tra Lý Tô hay không?</em></strong></a></p>
+          </div>
+        </div>
+        <div class="side-portrait right-portrait" style="background-image:url(picture/2.jpg)"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
