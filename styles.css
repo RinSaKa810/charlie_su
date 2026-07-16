@@ -20,7 +20,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   padding: 0.75rem;
-  background: radial-gradient(circle , #DBE5ED 0%, #C3D4E8 35%, #7691B0 100%);
+  background: radial-gradient(circle , #EEEAFD 0%, #D8CAF6 35%, #C2A9EF 100%);
 }
 
 @media (min-width: 360px) {
